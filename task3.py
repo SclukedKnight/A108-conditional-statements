@@ -31,3 +31,12 @@ Enter a number: 10000
 
 
 """
+numb = float(input("Please input a number, any loose strings won't be tolerated: "))
+if numb > 1000 or numb == 1000:
+    print(3)
+elif numb > 100 or numb == 100:
+    print(2)
+elif numb > 10 or numb == 10:
+    print(1)
+elif numb > 0 or numb == 0:
+    print(0)

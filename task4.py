@@ -18,3 +18,11 @@ the sentence does not contain password
 Enter a sentence: The best password is no password.
 the sentence contains password
 """
+
+pswrd = str(input("Please enter user password (case sensitive): "))
+phrase = str(input("Please enter phrase to check wether password is located inside it: "))
+
+if pswrd in phrase:
+    print("This phrase contains your password")
+else:
+    print("this phrase doesn't contain your phrase")
