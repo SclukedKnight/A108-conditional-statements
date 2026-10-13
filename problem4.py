@@ -14,6 +14,7 @@
 # - "that is a right triangle"
 # - "that is an acute triangle"
 # - "that is an obtuse triangle"
+
 """
 Example:
 Enter one side: 5
@@ -33,3 +34,28 @@ that is an obtuse triangle
 
 
 """
+
+import math
+a = float(input("input side 1: "))
+b = float(input("input side 2: "))
+c = float(input("input side 3: "))
+
+number = [a, b, c]
+number.sort()
+
+a = number[0]
+b = number[1]
+c = number[2]
+
+right = math.sqrt(a ** 2 + b ** 2)
+
+
+
+if right * .98 < c < right * 1.02:
+    print("Right triangle, or close enough")
+elif right > c ** 2:
+    print("Acute trinagle")
+elif right < c ** 2:
+    print("obstuse triangle")
+else:
+    print("probable not a triangle")

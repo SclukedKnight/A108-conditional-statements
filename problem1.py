@@ -12,3 +12,10 @@
 # Outputs:
 # "the number is even"
 # "the number is odd"
+
+numb = int(input("Please enter a number (int) and I'll say if it's even or odd: "))
+
+if numb % 2 == 0:
+    print(f"{numb} is even")
+else:
+    print(f"{numb} is odd")

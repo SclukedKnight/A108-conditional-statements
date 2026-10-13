@@ -29,3 +29,14 @@ Enter c: 8
 the equation can not be factored
 
 """
+a = float(input("input a: "))
+b = float(input("input b: "))
+c = float(input("input c: "))
+
+
+
+if (b ** 2 - (4 * a * c)) < 0:
+    print("the equation cannot be factored")
+else:
+    d = (b ** 2 - (4 * a * c)) ** (1/2)
+    print(f"The discriminate is equal to {d}, it can be factored")
