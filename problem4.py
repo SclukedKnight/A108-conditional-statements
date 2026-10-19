@@ -34,8 +34,6 @@ that is an obtuse triangle
 
 
 """
-
-import math
 a = float(input("input side 1: "))
 b = float(input("input side 2: "))
 c = float(input("input side 3: "))
@@ -43,13 +41,9 @@ c = float(input("input side 3: "))
 number = [a, b, c]
 number.sort()
 
-a = number[0]
-b = number[1]
-c = number[2]
+a, b, c = number[0], number[1], number[2]
 
-right = math.sqrt(a ** 2 + b ** 2)
-
-
+right = (a ** 2 + b ** 2) ** 1/2
 
 if right * .98 < c < right * 1.02:
     print("Right triangle, or close enough")
